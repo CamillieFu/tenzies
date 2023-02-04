@@ -1,0 +1,17 @@
+.dice {
+  height: 3.5rem;
+  flex-wrap: wrap;
+  width: 3.5rem;
+  background-color: white;
+  text-align: center;
+  padding: .75rem;
+  margin: 6px;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.held {
+  background-color: #59E391 !important;
+}

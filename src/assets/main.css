@@ -1,0 +1,44 @@
+.game-container {
+  height: 100vw;
+  padding-top: 64px;
+
+}
+
+.game-div {
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 54px;
+  width: 450px;
+  height: 440px;
+  margin: auto;
+  padding: 45px 24px;
+  justify-content: space-evenly
+}
+
+.game-explanation {
+  padding: 0px 24px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 10px;
+  border: none;
+  background-color: #5035FF;
+  border-radius: 8px;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+button:active {
+  padding: 11px;
+}
