@@ -15,7 +15,8 @@
   height: 440px;
   margin: auto;
   padding: 45px 24px;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  overflow: scroll;
 }
 
 .game-explanation {
@@ -32,16 +33,31 @@ h1 {
 }
 
 button {
-  margin-top: 1rem;
-  padding: 10px;
+  font-size: 1rem;
+  margin: 1rem 75px 0px 75px;
+  padding: 12px;
   border: none;
   background-color: #5035FF;
   border-radius: 8px;
   box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
   color: whitesmoke;
   font-weight: 600;
+  border-bottom: solid 2px #332589;
 }
 
 button:active {
   padding: 11px;
+  border-bottom: none;
+}
+
+@media (max-width: 500px) {
+  .game-div {
+    width: 90vw;
+    height: 80vh;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 388) and (max-width:432) {
+
 }
