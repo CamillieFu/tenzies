@@ -10,7 +10,7 @@ export default function App() {
   const {width, height} = useWindowSize()
 
   const tenzies = allDice.every((dice) => (
-      allDice[0].value === dice.value ? true : false
+      allDice[0].value === dice.value && dice.held ? true : false
   ))
 
   function randomNumber() {
