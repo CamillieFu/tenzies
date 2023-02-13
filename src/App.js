@@ -10,15 +10,15 @@ export default function App() {
   const {width, height} = useWindowSize()
   const [tenzies, setTenzies] = React.useState(false)
 
-React.useEffect(() => {
-    setTenzies(() => {
-      return allDice.every(num => num.value === allDice[0].value && num.held)
-    })
-  }, [allDice])
+  React.useEffect(() => {
+      setTenzies(() => {
+        return allDice.every(num => num.value === allDice[0].value && num.held)
+      })
+    }, [allDice])
 
-function randomNumber() {
-  return Math.ceil(Math.random() * 6);
-}
+  function randomNumber() {
+    return Math.ceil(Math.random() * 6);
+  }
 
   function allNewDice() {
     const newDice = []
@@ -27,7 +27,7 @@ function randomNumber() {
         held: false,
         id: i,
         value: randomNumber()
-        }
+      }
       newDice.push(die)
     }
     return newDice
@@ -60,13 +60,13 @@ function randomNumber() {
   return (
     <div className="game-container">
     {tenzies &&  <Confetti width={width} height={height} />}
-        <Main
-            dice={allDice}
-            diceComponents={diceComponents}
-            rollUnheldDice={rollUnheldDice}
-            allNewDice={allNewDice}
-            tenzies={tenzies}
-        />
+      <Main
+          dice={allDice}
+          diceComponents={diceComponents}
+          rollUnheldDice={rollUnheldDice}
+          allNewDice={allNewDice}
+          tenzies={tenzies}
+      />
     </div>
   )
 }
