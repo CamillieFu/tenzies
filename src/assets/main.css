@@ -46,8 +46,7 @@ button {
 }
 
 button:active {
-  padding: 11px;
-  border-bottom: none;
+  box-shadow: inset 5px 5px 5px -4px rgb(31, 31, 31);
 }
 
 @media (max-width: 500px) {
