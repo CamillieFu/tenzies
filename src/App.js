@@ -53,7 +53,7 @@ export default function App() {
         {...die, value: randomNumber()}
     }))
     } else {
-        setAllDice(allNewDice());
+      setAllDice(allNewDice());
     }
   }
 
@@ -61,11 +61,11 @@ export default function App() {
     <div className="game-container">
     {tenzies &&  <Confetti width={width} height={height} />}
       <Main
-          dice={allDice}
-          diceComponents={diceComponents}
-          rollUnheldDice={rollUnheldDice}
-          allNewDice={allNewDice}
-          tenzies={tenzies}
+        dice={allDice}
+        diceComponents={diceComponents}
+        rollUnheldDice={rollUnheldDice}
+        allNewDice={allNewDice}
+        tenzies={tenzies}
       />
     </div>
   )
