@@ -5,8 +5,13 @@ export default function Main(props) {
   const [count, setCount] = React.useState(0);
 
   function handleClick() {
+    if (!props.tenzies) {
       setCount(prevCount => prevCount + 1);
       props.rollUnheldDice();
+    } else {
+      setCount(0);
+      props.rollUnheldDice();
+    }
   }
 
   return (
@@ -18,7 +23,7 @@ export default function Main(props) {
           <button onClick={handleClick}>{props.tenzies ? 'Play Again' : 'Roll Again'}</button>
           {
             props.tenzies && <p className="score-count-msg">You completed this round within {count} rolls.
-            {count > 10 ? ' Better luck next time 😅' : 'Great job 🙌'}</p>
+            {count > 10 ? ' Better luck next time 😅' : ' Great job 🙌'}</p>
           }
       </div>
     </>
