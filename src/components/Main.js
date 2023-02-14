@@ -2,7 +2,6 @@ import React from 'react'
 import '../assets/main.css'
 
 export default function Main(props) {
-  // track count
   const [count, setCount] = React.useState(0);
 
   function handleClick() {
