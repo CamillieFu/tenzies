@@ -16,7 +16,10 @@ export default function Main(props) {
           <p className="game-explanation">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
           {props.diceComponents}
           <button onClick={handleClick}>{props.tenzies ? 'Play Again' : 'Roll Again'}</button>
-          {props.tenzies && <p className="score-count-msg">You completed this round within {count} rolls! Great job!</p>}
+          {
+            props.tenzies && <p className="score-count-msg">You completed this round within {count} rolls.
+            {count > 10 ? ' Better luck next time 😅' : 'Great job 🙌'}</p>
+          }
       </div>
     </>
   )
