@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   margin-top: 54px;
   width: 450px;
-  height: 440px;
+  height: auto;
   margin: auto;
   padding: 45px 24px;
   justify-content: space-evenly;
@@ -52,11 +52,16 @@ button:active {
 @media (max-width: 500px) {
   .game-div {
     width: 90vw;
-    height: 80vh;
     justify-content: center;
+  }
+
+  .game-container {
+    padding: 24px;
+    display: flex;
   }
 }
 
-@media (min-width: 388) and (max-width:432) {
-
+.score-count-msg {
+  text-align: center;
+  font-weight: 500;
 }
